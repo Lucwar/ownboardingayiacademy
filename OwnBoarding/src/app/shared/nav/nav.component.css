@@ -1,0 +1,11 @@
+/* Estilos de la navbar */
+.navbar{
+    background-color: rgba(243, 243, 243, 0.9) !important;
+    position: relative;
+    z-index: 2;
+}
+
+/* Boton de la nav que lleva a la moodle (AyiAcademy) */
+.btnNavMoodle{
+    margin: 0;
+}

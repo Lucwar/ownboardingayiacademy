@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { QuiensomosComponent } from './quiensomos/quiensomos/quiensomos.component';
-import { QuehacemosComponent } from './quehacemos/quehacemos/quehacemos.component';
-import { PorquehacemosComponent } from './porquehacemos/porquehacemos/porquehacemos.component';
+import { QuiensomosComponent } from './quiensomos/quiensomos.component';
+import { QuehacemosComponent } from './quehacemos/quehacemos.component';
+import { PorquehacemosComponent } from './porquehacemos/porquehacemos.component';
 
 
 
