@@ -6,6 +6,47 @@
     position: relative;
 }
 /* Titulo principal */
+.item-1, 
+.item-2, 
+.item-3 {
+	position: absolute;
+    display: block;
+    width: 60%;
+    font-size: 2em;
+	animation-duration: 15s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+.item-1{
+	animation-name: anim-1;
+}
+
+.item-2{
+	animation-name: anim-2;
+}
+
+.item-3{
+	animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 25%; opacity: 1; }
+  33.33%, 100% { left: -110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 25%; opacity: 1; }
+  66.66%, 100% { left: -110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: -110%; opacity: 0; }
+}
+
 .tituloPrincipal{
     color: white;
     margin: 80px 0px 0px 80px;
@@ -14,7 +55,7 @@
 .textoCambiante{
     font-size: 70px;
     color: white;
-    margin-left: 80px;
+    margin-left: -200px;
 }
 
 /* Cajitas */
@@ -33,7 +74,7 @@
     cursor: pointer;
 }
 .containerBox{
-    margin: 80px;
+    margin: 200px 80px;
     position: relative;
     display: flex;
 }
@@ -96,14 +137,16 @@
 .containerButtons{
     position: relative;
     z-index: 2;
-    top: 400px;
-    left: 100px;
+    margin-top: 400px;
+    margin-left: 100px;
 }
 .textButton p {
     font-size: 22px;
     margin: 0;
 }
-
+.textButton h3 {
+    color: black;
+}
 .containerButtons ul li {
     opacity: 0.5;
     cursor: pointer;
@@ -122,4 +165,17 @@
 }
 .ulButtons li {
     list-style: none;
+}
+.row{
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.shape2{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    z-index: 3;
+    background-image: linear-gradient(135deg,#dbf6c8,#1baec5);
+    box-shadow: 14px 14px 110px 0 rgb(0 0 0 / 15%);
+    border-radius:40px;
 }
