@@ -1,0 +1,130 @@
+.bg{
+    background-image: url(../../../assets/background-1.jpg);
+     /* background: rgb(29,106,224); */
+        /* background: linear-gradient(90deg, rgba(29,106,224,1) 0%, rgba(23,76,148,1) 30%); */
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.bg::before{
+    content: "";
+    z-index: -1;
+    width: 100%;
+    min-height: 100vh;
+    height: 800px;
+    position: absolute;
+    background: rgba(23,76,148,0.9);
+    /* background: red; */
+    opacity: 0.8;
+}
+/* Titulos y texto */
+.tituloPrincipal{
+    margin: 200px 0px 0px 80px;
+}
+.parrafoPrincipal{
+    margin-left: 80px;
+    color: white;
+    width: 30%;
+}
+.botonPortada{
+    margin-left: 80px;
+}
+/* Circulos */
+.containerCircles{
+    display: block;
+    height: 460px;
+    position: relative;
+    z-index: 3;
+}
+.circle{
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align:middle;
+    display: flex;
+    z-index: 1;
+}
+.circle-inside{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 180px;
+    width: 180px;
+    border-radius: 100%;
+    z-index: 2;
+    margin: auto;
+    /* margin-right: auto; */
+}
+.circle-inside h5, .circle-inside p{
+    color: #fff;
+}
+/* Circle 1 */
+.c1{
+    background-color: rgba(43,12,147,.6);
+    left: 70vw;
+    top: -250px;
+}
+.c1-inside{
+    background-color: #2b0c93;
+}
+/* Circle 2 */
+.c2{
+    background-color: rgba(80, 79, 77, 0.6);
+    left: 65vw;
+    top: 100px;
+}
+.c2-inside{
+    background-color: rgb(80, 79, 77);
+}
+/* Circle 3 */
+.c3{
+    background-color: rgba(48,213,165,.7);
+    left: 55vw;
+    top: 320px;
+}
+.c3-inside{
+    background-color: rgb(8,213,165);
+}
+/* Circle 4 */
+.c4{
+    background-color: rgba(245,132,68,.7);
+    left: 40vw;
+    top: -100px;
+}
+.c4-inside{
+    background-color: rgb(245,132,68);
+}
+/* Circle 5 */
+.c5{
+    background-color: rgba(27,174,197,.7);
+    left: 30vw;
+    top: 130px;
+}
+.c5-inside{
+    background-color: rgb(27,174,197);
+}
+/* Circle 6 */
+.c6{
+    background-color: rgba(1,38,144,.7);
+    left: 20vw;
+    top: 320px;
+}
+.c6-inside{
+    background-color: rgb(1,38,144);
+}
+/* Circle 7 */
+.c7{
+    background-color: rgba(236,109,154,.7);
+    left: 5vw;
+    top: 0px;
+}
+.c7-inside{
+    background-color: rgb(236,109,154);
+}
