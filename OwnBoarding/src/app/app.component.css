@@ -122,6 +122,7 @@
     z-index: 2;
     margin: 160px 40px;
     position: absolute;
+    font-size: 60px;
 }
 .hr1{
     top: 230px;
@@ -177,6 +178,7 @@
     background-image: linear-gradient(135deg,#dbf6c8,#1baec5);
     box-shadow: 14px 14px 110px 0 rgb(0 0 0 / 15%);
     border-radius:40px;
+    transition: 0.1s;
 }
 .rectangle{
     height: 300px;
@@ -187,6 +189,7 @@
     z-index: 0;
     top: -170px;
     margin-left: 100px;
+    transition: 0.3s;
 }
 .r1{
     background-image: url(../assets/background-1.jpg);
@@ -201,6 +204,7 @@
     border: 7px solid white;
     left: 220px;
     top: -230px;
+    transition: 0.2s;
 }
 .c1{
     background-image: url(../assets/background-1.jpg);
@@ -215,10 +219,57 @@
 .selected, .selected h3{
     color: white !important;
     opacity: 1 !important;
+    transition: 0.2s;
 }
 .selected .icon{
     color: rgb(2, 255, 2) !important;
 }
 .icon{
     color: white;
+}
+
+
+/* Another css */
+.bg-3{
+    background-color: #f1f4fa;
+    height: 900px;
+    display: block;
+    position: relative;
+    overflow-x: clip;
+}
+.seccionVideo{
+    z-index: 10;
+    height: 500px;
+    width: 1000px;
+    border-radius: 70px;
+    background-color: green;
+    position: relative;
+    box-shadow: 14px 14px 110px 0 rgb(0 0 0 / 15%);
+    top: -100px;
+    left: 230px;
+}
+.shape3{
+    position:absolute ;
+    z-index: 1;
+    background-image: linear-gradient(225deg,#6bc4db 14%,#ab68d1);
+    width: 500px;
+    height: 500px;
+    box-shadow: 14px 14px 110px 0 rgb(0 0 0 / 15%);
+    transform: rotate(60deg);
+    border-radius: 80px;
+    margin-left: 60%;
+    top: -103px;
+}
+.shape4{
+    background-image: linear-gradient(225deg,#8367e7 14%,rgba(171,104,209,.6));
+    width: 350px;
+    height: 350px;
+    box-shadow: 14px 14px 110px 0 rgb(0 0 0 / 15%);
+    transform: rotate(60deg);
+    border-radius: 80px;
+    position: absolute;
+    z-index: 2;
+    top: -103px;
+    margin-left: 80%;
+    
 }
