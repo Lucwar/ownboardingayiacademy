@@ -1,10 +1,50 @@
+.body{
+    /* background-image: linear-gradient(135deg,#012690 10%,rgba(27,174,197,.8)) !important; */
+}
 /* Estilos para el backgroubd principal */
 .bg-1{
     background-image: url(../assets/background-1.jpg);
+     /* background: rgb(29,106,224); */
+        /* background: linear-gradient(90deg, rgba(29,106,224,1) 0%, rgba(23,76,148,1) 30%); */
     background-size: cover;
     height: 800px;
+    width: 100%;
     position: relative;
+    z-index: 1;
 }
+.bg-1::before{
+    content: "";
+    z-index: -1;
+    width: 100%;
+    min-height: 100vh;
+    height: 800px;
+    position: absolute;
+    background: rgba(23,76,148,0.9);
+    /* background: red; */
+    opacity: 0.8;
+}
+/* .contenedorLogos{
+    display:contents;
+    position: relative;
+    z-index: 10;
+}
+.logo{
+    background-repeat: no-repeat;
+    height: 80px;
+    background-size: contain;
+}
+.logo1{
+    background-image: url(../assets/logocordoba.png);
+}
+.logo2{
+    background-image: url(../assets/logoarcor.png);
+}
+.logo3{
+    background-image: url(../assets/logotarjetanaranja.png);
+}
+.logo4{
+    background-image: url(../assets/logoredlink.png);
+} */
 /* Titulo principal */
 .contenedorTextCambiante{
     flex: content;
@@ -87,21 +127,23 @@
 }
 .box1{
     background-image: linear-gradient(
-        135deg,#ffe49a,#ec6d9a);;
+        135deg,#0034a3,#679add);;
 }
 .box2{
     background-image: linear-gradient(
-        315deg,#2b0c93,#ec6d9a);;
+        315deg,#2b0c93,#f03d7c);;
 }
 .box3{
     background-image: linear-gradient(
-        315deg,#1baec5,#dbf6c8);       
+        315deg,#1baec5,#83bebe);       
 }
 
 /* Another css */
 .bg-2{
-    background-image: linear-gradient(
-        135deg,#2b0c93,#ec6d9a 44%,#ffe49a);
+    /* background-image: linear-gradient(
+        135deg,#2b0c93,#ec6d9a 44%,#ffe49a); */
+        background: rgb(29,106,224);
+        background: linear-gradient(90deg, rgba(29,106,224,1) 0%, rgba(23,76,148,1) 60%);
     height: 1000px;
 }
 .shape1{
@@ -185,14 +227,25 @@
     width: 600px;
     border-radius: 40px;
     background-position: center;
+    background-size: cover;
     position: relative;
     z-index: 0;
     top: -170px;
     margin-left: 100px;
     transition: 0.3s;
+    filter: grayscale();
 }
 .r1{
-    background-image: url(../assets/background-1.jpg);
+    background-image: url(../assets/ayi1.png);
+}
+.r2{
+    background-image: url(../assets/ayi2.png);
+}
+.r3{
+    background-image: url(../assets/ayi3.png);
+}
+.r4{
+    background-image: url(../assets/ayi4.png);
 }
 .circle{
     height: 150px;
@@ -207,7 +260,16 @@
     transition: 0.2s;
 }
 .c1{
-    background-image: url(../assets/background-1.jpg);
+    background-image: url(../assets/ayi1.png);
+}
+.c2{
+    background-image: url(../assets/ayi2.png);
+}
+.c3{
+    background-image: url(../assets/ayi1.png);
+}
+.c4{
+    background-image: url(../assets/ayi4.png);
 }
 .textCard{
     color: rgb(85, 84, 84);
@@ -246,7 +308,7 @@
     position: relative;
     box-shadow: 14px 14px 110px 0 rgb(0 0 0 / 15%);
     top: -100px;
-    left: 230px;
+    left: 130px;
 }
 .shape3{
     position:absolute ;
