@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { QuiensomosComponent } from './quiensomos/quiensomos.component';
 import { QuehacemosComponent } from './quehacemos/quehacemos.component';
 import { PorquehacemosComponent } from './porquehacemos/porquehacemos.component';
+import { AppRoutingModule } from '../app-routing.module';
+
 
 
 
@@ -13,7 +15,8 @@ import { PorquehacemosComponent } from './porquehacemos/porquehacemos.component'
     PorquehacemosComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AppRoutingModule
   ],
   exports:[QuiensomosComponent, QuehacemosComponent, PorquehacemosComponent]
 })
