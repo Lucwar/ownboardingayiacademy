@@ -4,14 +4,19 @@ import { RouterModule, Routes } from '@angular/router';
 import { QuiensomosComponent } from './pages/quiensomos/quiensomos.component';
 import { QuehacemosComponent } from './pages/quehacemos/quehacemos.component';
 import { PorquehacemosComponent } from './pages/porquehacemos/porquehacemos.component';
-import { AppComponent } from './app.component';
+import { HomeComponent } from './pages/home/home.component';
 
 
 const routes: Routes = [
-  {path: 'home', component: AppComponent},
+  {path: 'home', component:HomeComponent},
+  // children:[
+  // {path: 'quienesomos', component: QuiensomosComponent},
+  // {path: 'quehacemos', component: QuehacemosComponent},
+  // {path: 'porquehacemos', component: PorquehacemosComponent}]},
   {path: 'quienesomos', component: QuiensomosComponent},
   {path: 'quehacemos', component: QuehacemosComponent},
   {path: 'porquehacemos', component: PorquehacemosComponent},
+  
   {path: '', redirectTo: '/home', pathMatch: 'full'}
 ];
 
