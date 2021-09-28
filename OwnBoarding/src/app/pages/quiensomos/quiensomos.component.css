@@ -1,0 +1,125 @@
+.bg{
+    background-image: url(../../../assets/background-1.jpg);
+     /* background: rgb(29,106,224); */
+        /* background: linear-gradient(90deg, rgba(29,106,224,1) 0%, rgba(23,76,148,1) 30%); */
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.bg::before{
+    content: "";
+    z-index: -1;
+    width: 100%;
+    min-height: 100vh;
+    height: 800px;
+    position: absolute;
+    background: rgba(23,76,148,0.9);
+    /* background: red; */
+    opacity: 0.8;
+}
+.containerPrincipal{
+    height: 400px;
+}
+/* Titulos y texto */
+.tituloPrincipal{
+    margin: 200px 0px 0px 80px;
+}
+.parrafoPrincipal{
+    margin-left: 80px;
+    color: white;
+    width: 40%;
+    font-size: 24px;
+}
+.botonPortada{
+    margin-left: 80px;
+}
+/* Circulos */
+.containerSecundario{
+    height: 400px;
+}
+.circle-inside{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 650px;
+    width: 180px;
+    z-index: 2;
+    margin: auto;
+    /* margin-right: auto; */
+}
+.circle-inside h5, .circle-inside p{
+    color: #fff;
+}
+.circle-inside p{
+    text-align: center;
+}
+/* Circle 1 */
+.c1{
+    background-color: rgba(43,12,147,.6);
+    left: 80vw;
+    top: -250px;
+}
+.c1-inside{
+    background-color: #2b0c93;
+}
+
+
+/* Formas */
+.shape3{
+    position: relative;
+    z-index: 1;
+    background-image: linear-gradient(225deg,#6bc4db 14%,#ab68d1);
+    width: 500px;
+    height: 500px;
+    box-shadow: 14px 14px 110px 0 rgb(0 0 0 / 15%);
+    transform: rotate(240deg);
+    border-radius: 80px;
+    top: -100px;
+    right: 150px;
+}
+.shape4{
+    background-image: linear-gradient(225deg,#8367e7 64%,rgba(171,104,209,.6));
+    width: 350px;
+    height: 350px;
+    box-shadow: 14px 14px 110px 0 rgb(0 0 0 / 15%);
+    transform: rotate(240deg);
+    border-radius: 80px;
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: -170px;
+}
+.bg-2{
+    background-color: #f1f4fa;
+    position: relative;
+}
+.tituloSecundario{
+    color: #20325a;
+    position: relative;
+    z-index: 10;
+    margin-left: 80px;
+    top: -300px;
+    font-weight: 900;
+}
+.parrafoSecundario{
+    color: #20325a;
+    position: relative;
+    top: -350px;
+    z-index: 10;
+    margin-left: 80px;
+    width: 50%;
+    font-size: 24px;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 900px;
+    z-index: 2;
+    margin: auto;
+}

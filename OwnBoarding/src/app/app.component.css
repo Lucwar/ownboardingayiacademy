@@ -1,0 +1,22 @@
+/* Estilos para el backgroubd principal */
+.bg-1{
+    background-image: url(../assets/background-1.jpg);
+     /* background: rgb(29,106,224); */
+        /* background: linear-gradient(90deg, rgba(29,106,224,1) 0%, rgba(23,76,148,1) 30%); */
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.bg-1::before{
+    content: "";
+    z-index: -1;
+    width: 100%;
+    min-height: 100vh;
+    height: 800px;
+    position: absolute;
+    background: rgba(23,76,148,0.9);
+    /* background: red; */
+    opacity: 0.8;
+}
