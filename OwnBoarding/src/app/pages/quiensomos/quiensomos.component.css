@@ -20,7 +20,8 @@
     opacity: 0.8;
 }
 .containerPrincipal{
-    height: 400px;
+    height: 100vh;
+    
 }
 /* Titulos y texto */
 .tituloPrincipal{
@@ -44,8 +45,6 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 650px;
-    width: 180px;
     z-index: 2;
     margin: auto;
     /* margin-right: auto; */
@@ -72,8 +71,8 @@
     position: relative;
     z-index: 1;
     background-image: linear-gradient(225deg,#6bc4db 14%,#ab68d1);
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     box-shadow: 14px 14px 110px 0 rgb(0 0 0 / 15%);
     transform: rotate(240deg);
     border-radius: 80px;
@@ -118,8 +117,9 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 500px;
-    width: 900px;
-    z-index: 2;
-    margin: auto;
+    height:450px;
+    width: 750px;
+    margin-top: 50px;
+    position: absolute;
+
 }
